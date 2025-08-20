@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartSummary Privacy Policy</title>
+  <style>
+    body {
+      max-width: 600px;
+      margin: 50px auto;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      padding: 0 20px;
+    }
+    
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      color: #1a73e8;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+    
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+    
+    .last-updated {
+      text-align: center;
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      color: #1565c0;
+      font-weight: bold;
+    }
+    
+    h2 {
+      color: #1a73e8;
+      border-bottom: 2px solid #e3f2fd;
+      padding-bottom: 8px;
+      margin-top: 35px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    h3 {
+      color: #1976d2;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    
+    .privacy-highlight {
+      background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+      border: 2px solid #4caf50;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 25px 0;
+    }
+    
+    .privacy-highlight h3 {
+      color: #2e7d32;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .privacy-highlight ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+    
+    .privacy-highlight li {
+      margin-bottom: 8px;
+      color: #2e7d32;
+    }
+    
+    .technical-details {
+      background: #f8f9fa;
+      border-left: 4px solid #1a73e8;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .technical-details h4 {
+      color: #1a73e8;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    
+    .no-data-collected {
+      background: linear-gradient(135deg, #fff3e0, #fce4ec);
+      border: 2px solid #ff9800;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 25px 0;
+      text-align: center;
+    }
+    
+    .no-data-collected h3 {
+      color: #e65100;
+      margin-top: 0;
+      font-size: 1.3em;
+    }
+    
+    .contact-section {
+      background: #e3f2fd;
+      padding: 25px;
+      border-radius: 8px;
+      margin: 30px 0;
+      text-align: center;
+    }
+    
+    .contact-section h3 {
+      color: #1565c0;
+      margin-top: 0;
+    }
+    
+    .back-link {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
+    }
+    
+    .back-button {
+      background: linear-gradient(135deg, #1a73e8, #1976d2);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+    }
+    
+    .back-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(26, 115, 232, 0.4);
+    }
+    
+    .back-button:focus {
+      outline: 2px solid #1a73e8;
+      outline-offset: 2px;
+    }
+    
+    ul {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    strong {
+      color: #1a73e8;
+    }
+    
+    .icon {
+      font-size: 1.2em;
+      margin-right: 5px;
+    }
+    
+    code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      color: #d32f2f;
+    }
+    
+    .data-flow {
+      background: white;
+      border: 2px solid #e0e0e0;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    
+    .data-flow h4 {
+      color: #424242;
+      margin-top: 0;
+      text-align: center;
+    }
+    
+    .flow-step {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      padding: 10px;
+      background: #f8f9fa;
+      border-radius: 6px;
+    }
+    
+    .flow-step .step-number {
+      background: #1a73e8;
+      color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    
+    /* Accessibility and High Contrast Support */
+    @media (prefers-contrast: high) {
+      body {
+        background: white;
+      }
+      
+      .container {
+        border: 3px solid #000;
+        box-shadow: none;
+      }
+      
+      h1, h2, h3, strong {
+        color: #000;
+      }
+      
+      .privacy-highlight {
+        border: 3px solid #000;
+        background: #fff;
+      }
+      
+      .back-button {
+        background: #000;
+        border: 2px solid #000;
+      }
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        margin: 20px auto;
+        padding: 0 15px;
+      }
+      
+      .container {
+        padding: 25px;
+      }
+      
+      h1 {
+        font-size: 2em;
+      }
+      
+      .flow-step {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .flow-step .step-number {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    
+    /* Print Styles */
+    @media print {
+      body {
+        background: white;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        box-shadow: none;
+        border: 1px solid #ccc;
+      }
+      
+      .back-link {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header role="banner">
+      <h1>🤖 SmartSummary Privacy Policy</h1>
+      <p class="subtitle">Summarize Smarter, Save Time</p>
+      
+      <div class="last-updated" role="status" aria-label="Last updated date">
+        <span class="icon">📅</span> Last Updated: August 20, 2025
+      </div>
+    </header>
+
+    <main role="main">
+      <section aria-labelledby="introduction">
+        <h2 id="introduction"><span class="icon">🔒</span>Introduction</h2>
+        <div class="privacy-highlight">
+          <h3><span class="icon">🛡️</span>Privacy-First Design</h3>
+          <p><strong>SmartSummary is built with your privacy as the top priority.</strong> We believe that webpage summarization should not come at the cost of your personal data or browsing privacy.</p>
+          <ul>
+            <li><strong>Zero Data Collection:</strong> We don't collect any personal information</li>
+            <li><strong>Local Processing:</strong> All text analysis happens on your device</li>
+            <li><strong>No External Servers:</strong> Your content never leaves your browser</li>
+            <li><strong>Complete Transparency:</strong> Open about our data handling practices</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="data-collection">
+        <h2 id="data-collection"><span class="icon">📊</span>Data Collection</h2>
+        <div class="no-data-collected">
+          <h3><span class="icon">🚫</span>We Do NOT Collect Any Data</h3>
+          <p><strong>SmartSummary does not collect, store, transmit, or have access to any of the following:</strong></p>
+        </div>
+        
+        <ul>
+          <li><strong>Personal Information:</strong> No names, emails, or contact details</li>
+          <li><strong>Browsing History:</strong> No tracking of websites you visit</li>
+          <li><strong>Webpage Content:</strong> No storage of pages you summarize</li>
+          <li><strong>Usage Analytics:</strong> No tracking of how you use the extension</li>
+          <li><strong>Device Information:</strong> No collection of device or browser details</li>
+          <li><strong>Location Data:</strong> No access to your geographic location</li>
+          <li><strong>Cookies or Tracking:</strong> No cookies, pixels, or tracking mechanisms</li>
+        </ul>
+
+        <div class="technical-details">
+          <h4>Technical Implementation</h4>
+          <p>SmartSummary is designed to operate completely offline after installation. The extension uses only:</p>
+          <ul>
+            <li><code>chrome.storage.local</code> - For saving your preferences and summaries locally</li>
+            <li><code>chrome.tabs</code> - To access the current page content for summarization</li>
+            <li><code>chrome.scripting</code> - To inject content analysis scripts</li>
+          </ul>
+          <p><strong>No network permissions are requested or used.</strong></p>
+        </div>
+      </section>
+
+      <section aria-labelledby="data-processing">
+        <h2 id="data-processing"><span class="icon">⚙️</span>How Your Data is Processed</h2>
+        <div class="data-flow">
+          <h4>Local Processing Flow</h4>
+          <div class="flow-step">
+            <div class="step-number">1</div>
+            <div>You visit a webpage and click "Generate Summary"</div>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">2</div>
+            <div>SmartSummary extracts text content directly from the page's DOM</div>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">3</div>
+            <div>JavaScript algorithms analyze the content locally on your device</div>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">4</div>
+            <div>A summary is generated and displayed in the extension popup</div>
+          </div>
+          <div class="flow-step">
+            <div class="step-number">5</div>
+            <div>If you choose to save, the summary is stored in your browser's local storage</div>
+          </div>
+        </div>
+        <p><strong>Important:</strong> At no point in this process is any data transmitted to external servers or third parties.</p>
+      </section>
+
+      <section aria-labelledby="data-storage">
+        <h2 id="data-storage"><span class="icon">💾</span>Data Storage</h2>
+        <h3>Local Browser Storage Only</h3>
+        <p>SmartSummary stores the following data locally in your browser using <code>chrome.storage.local</code>:</p>
+        <ul>
+          <li><strong>Saved Summaries:</strong> Text summaries you choose to save (stored locally)</li>
+          <li><strong>User Preferences:</strong> Theme settings (dark mode, high contrast)</li>
+          <li><strong>Extension Settings:</strong> Summary length preferences, accessibility options</li>
+          <li><strong>Pro Mode Status:</strong> Demo subscription activation state</li>
+        </ul>
+
+        <div class="technical-details">
+          <h4>Storage Details</h4>
+          <ul>
+            <li><strong>Location:</strong> Your browser's local storage (never synchronized to cloud)</li>
+            <li><strong>Access:</strong> Only the SmartSummary extension can access this data</li>
+            <li><strong>Retention:</strong> Data persists until you uninstall the extension or clear browser data</li>
+            <li><strong>Size Limit:</strong> Chrome's 5MB local storage quota applies</li>
+            <li><strong>Encryption:</strong> Data is stored using Chrome's standard local storage security</li>
+          </ul>
+        </div>
+
+        <h3>Data Control</h3>
+        <p>You have complete control over your data:</p>
+        <ul>
+          <li><strong>Clear Summaries:</strong> Use the "Clear" button to delete all saved summaries</li>
+          <li><strong>Reset Settings:</strong> Uninstall and reinstall to reset all preferences</li>
+          <li><strong>Export Data:</strong> Copy summaries to external applications as needed</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="permissions">
+        <h2 id="permissions"><span class="icon">🔑</span>Chrome Extension Permissions</h2>
+        <p>SmartSummary requests minimal permissions necessary for core functionality:</p>
+        
+        <h3>Required Permissions</h3>
+        <ul>
+          <li><strong>activeTab:</strong> Access content of the currently active tab for summarization</li>
+          <li><strong>storage:</strong> Save your preferences and summaries locally</li>
+          <li><strong>scripting:</strong> Inject content analysis scripts into webpages</li>
+        </ul>
+
+        <h3>Permissions We Do NOT Request</h3>
+        <ul>
+          <li><strong>Host permissions:</strong> No access to specific websites</li>
+          <li><strong>Network access:</strong> No ability to make external requests</li>
+          <li><strong>File system access:</strong> No access to your computer's files</li>
+          <li><strong>Browsing history:</strong> No access to your browsing history</li>
+          <li><strong>Bookmarks:</strong> No access to your bookmarks</li>
+          <li><strong>Downloads:</strong> No ability to download files</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="no-tracking">
+        <h2 id="no-tracking"><span class="icon">🚫</span>No Tracking or Analytics</h2>
+        <div class="privacy-highlight">
+          <h3><span class="icon">🎯</span>Zero Tracking Commitment</h3>
+          <p><strong>SmartSummary does not use any tracking, analytics, or monitoring technologies:</strong></p>
+          <ul>
+            <li>No Google Analytics or similar services</li>
+            <li>No error reporting to external services</li>
+            <li>No usage statistics collection</li>
+            <li>No A/B testing or behavioral analysis</li>
+            <li>No third-party scripts or integrations</li>
+            <li>No fingerprinting or device identification</li>
+          </ul>
+        </div>
+
+        <h3>Why No Analytics?</h3>
+        <p>We believe that privacy should be the default, not an option. By avoiding all forms of tracking and analytics, we ensure that:</p>
+        <ul>
+          <li>Your browsing patterns remain completely private</li>
+          <li>No third parties can access your data through our extension</li>
+          <li>You can use SmartSummary with complete confidence</li>
+          <li>There are no hidden data collection practices</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="third-parties">
+        <h2 id="third-parties"><span class="icon">🤝</span>Third-Party Services</h2>
+        <div class="no-data-collected">
+          <h3><span class="icon">🔒</span>Zero Third-Party Integrations</h3>
+          <p><strong>SmartSummary does not integrate with, connect to, or share data with any third-party services.</strong></p>
+        </div>
+        
+        <ul>
+          <li>No external APIs for text processing</li>
+          <li>No cloud services for storage or backup</li>
+          <li>No advertising networks or partners</li>
+          <li>No social media integrations</li>
+          <li>No content delivery networks (CDNs)</li>
+          <li>No external font or resource loading</li>
+        </ul>
+
+        <p><strong>All summarization algorithms run locally using vanilla JavaScript.</strong> This ensures your content never leaves your device.</p>
+      </section>
+
+      <section aria-labelledby="security">
+        <h2 id="security"><span class="icon">🛡️</span>Security Measures</h2>
+        <h3>Technical Security</h3>
+        <ul>
+          <li><strong>Local Processing:</strong> All data processing occurs on your device</li>
+          <li><strong>No Network Requests:</strong> Zero external communications eliminate security risks</li>
+          <li><strong>Minimal Permissions:</strong> Only essential Chrome permissions requested</li>
+          <li><strong>Content Security:</strong> No injection of external scripts or resources</li>
+          <li><strong>Secure Storage:</strong> Uses Chrome's secure local storage mechanisms</li>
+        </ul>
+
+        <h3>Code Transparency</h3>
+        <ul>
+          <li>Extension uses only vanilla JavaScript (no external dependencies)</li>
+          <li>All code is contained within the extension package</li>
+          <li>No obfuscated or minified code that could hide functionality</li>
+          <li>Open source summarization algorithms</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="updates">
+        <h2 id="updates"><span class="icon">🔄</span>Privacy Policy Updates</h2>
+        <p>This privacy policy may be updated to reflect changes in the extension or legal requirements. When updates occur:</p>
+        <ul>
+          <li>The "Last Updated" date at the top of this page will be modified</li>
+          <li>Material changes will be highlighted in extension release notes</li>
+          <li>The core privacy commitment (local processing, no data collection) will not change</li>
+          <li>Users will be notified of significant privacy-related changes</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="rights">
+        <h2 id="rights"><span class="icon">⚖️</span>Your Privacy Rights</h2>
+        <p>Since SmartSummary does not collect personal data, traditional data protection rights (like data portability or deletion requests) are not applicable. However, you have:</p>
+        <ul>
+          <li><strong>Complete Control:</strong> Full control over all locally stored data</li>
+          <li><strong>Transparency:</strong> Complete visibility into how the extension works</li>
+          <li><strong>Data Portability:</strong> Ability to export summaries in standard text format</li>
+          <li><strong>Right to Deletion:</strong> Clear all data by using the "Clear" function or uninstalling</li>
+          <li><strong>No Consent Required:</strong> No personal data processing means no consent frameworks needed</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="contact" class="contact-section">
+        <h2 id="contact"><span class="icon">📧</span>Contact Information</h2>
+        <h3>Privacy Questions?</h3>
+        <p>If you have questions about this privacy policy or SmartSummary's privacy practices:</p>
+        <ul style="text-align: left; display: inline-block;">
+          <li><strong>Email:</strong> privacy@smartsummary-extension.com</li>
+          <li><strong>Support:</strong> support@smartsummary-extension.com</li>
+          <li><strong>Website:</strong> https://smartsummary-extension.com</li>
+        </ul>
+        <p><strong>Response Time:</strong> We aim to respond to privacy inquiries within 48 hours.</p>
+      </section>
+
+      <section aria-labelledby="commitment">
+        <div class="privacy-highlight">
+          <h3><span class="icon">🤝</span>Our Privacy Commitment</h3>
+          <p><strong>SmartSummary is committed to maintaining the highest standards of privacy protection.</strong> We will never compromise your privacy for business reasons, and we will continue to enhance our privacy protections as technology evolves.</p>
+          <p><em>Your trust is our most valuable asset, and we work every day to earn and maintain it.</em></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="back-link" role="contentinfo">
+      <button 
+        class="back-button" 
+        onclick="window.close()" 
+        aria-label="Close privacy policy and return to extension"
+      >
+        <span class="icon">←</span> Back to Extension
+      </button>
+      <p style="margin-top: 15px; font-size: 14px; color: #666;">
+        SmartSummary v1.0.0 - Privacy-First Webpage Summarization
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
